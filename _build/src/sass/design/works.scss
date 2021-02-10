@@ -1,0 +1,31 @@
+.works {
+  &__inner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    padding: 0 0 $space-01*2;
+    text-align: center;
+  }
+  
+  &__description {
+    padding: $space-01*3 0 0;
+    font-size: 18px;
+    line-height: 2;
+    .nowrap {
+      display: block;
+    }
+  }
+  
+  &__title {
+    margin: 0 0 $space-01*2;
+    font-family: "OpenSansCondensed-Light";
+    font-size: 39px;
+  }
+  
+  &__explain {
+    max-width: 600px;
+    padding: $space-01*3 $space-01*4;
+    line-height: 1.8;
+  }
+}

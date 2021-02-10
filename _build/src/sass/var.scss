@@ -1,0 +1,39 @@
+// body (base/common.scss)
+$color-default: #333132;
+$color-default-o: #fff;
+$color-link: #0070C9;
+$color-link: #ea352d;
+$color-link-on: darken($color-link, 25%);
+$color-loading-bar: $color-link;
+
+// form（base/reset.scss）
+$border-color-form: #ccc;
+$max-width-form: 400px;
+
+// responsive web design breakpoint（setting/**/*.scss）
+$breakpoint-default: 420px;
+
+// SNS color
+$twitter: #1DA1F2;
+$facebook: #3B5998;
+$youtube: #ff0000;
+$instagram: mix($facebook, $youtube);
+$instagram: linear-gradient(to bottom right, #5300c1, #c40094, #e80029);
+$line: #00b900;
+$github: #25292D;
+
+/**
+ * Depend on service
+ */
+$space-01: 10px;
+$max-width: 1280px;
+
+$color-02: #999;
+$color-loading-bar: $color-default;
+
+$border-radius: 18px;
+
+$sns-width: 50px;
+$sns-width-margin: 5px;
+
+

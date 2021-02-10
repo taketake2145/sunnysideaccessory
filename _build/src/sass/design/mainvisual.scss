@@ -1,0 +1,38 @@
+.mainvisual {  
+  height: floor((1/1.618)*1000vw)/10;
+  max-height: floor($max-width*(1/1.618));
+  padding: 0 0 $space-01*2;
+  
+  @include mq-min($max-width) {
+    padding: 0 $space-01*2 $space-01*2;
+  }
+  
+  @media (max-aspect-ratio: 250/300)  {
+    height: 83.3vw;
+  }
+  @media (max-aspect-ratio: 1000/1414)  {
+    height: floor((300/250)*1000vw)/10;
+  }
+  @media (max-aspect-ratio: 1000/1618)  {
+    height: floor((300/250)*1000vw)/10;
+  }
+  
+  &__inner {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    height: 100%;
+  }
+  
+  &__copy {
+    position: absolute;
+    right: $space-01*2;
+    bottom: $space-01*(-2);
+    z-index: 9;
+    width: 50%;
+    min-width: 280px;
+  }
+}

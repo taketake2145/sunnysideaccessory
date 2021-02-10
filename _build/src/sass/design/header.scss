@@ -1,0 +1,51 @@
+$sns-count: 6;
+$logo-width: 300px;
+$logo-width-margin: 6px;
+$sns-sum-width: ($sns-count + 1)*($sns-width + $sns-width-margin);
+$header-width: $logo-width + $logo-width-margin + $sns-sum-width + $space-01*2*2;
+
+.header {
+  position: relative;
+  z-index: 2;
+  
+  @include mq-max($header-width) {
+    .sns__common {
+      display: none;
+    }
+    .sns__share {
+      display: block;
+    }
+  }
+  
+  &__inner {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    max-width: $max-width;
+    margin: auto;
+    padding: 0 $space-01;
+    box-sizing: border-box;
+    
+    @include mq-min($max-width) {
+      height: 90px;
+      padding: 0 $space-01*2;
+    }
+    
+  }
+    
+  &__logo {
+    width: $logo-width;
+    max-width: 50vw;
+    height: auto;
+    margin: 0 $logo-width-margin;
+  }
+  
+}

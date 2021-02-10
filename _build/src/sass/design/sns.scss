@@ -1,0 +1,83 @@
+.sns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  @include mq-max() {
+    font-size: 16px;
+  }
+  
+  li {
+    margin: 0;
+    padding: $sns-width-margin 0 $sns-width-margin $sns-width-margin;
+  }
+  
+  &__share {
+    display: none;
+  }
+  
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $sns-width;
+    height: $sns-width;
+    background: #fafafa;
+    border-radius: 46%;
+    box-sizing: border-box;
+    color: $color-default;
+    
+    &--instagram {
+      font-size: 20px;
+      @include mq-max() {
+        font-size: 14px;
+      }
+    }
+    
+    &--youtube {
+      font-size: 14px;
+      @include mq-max() {
+        font-size: 12px;
+      }
+    }
+    
+    &--line {
+      font-size: 22px;
+      @include mq-max() {
+        font-size: 20px;
+      }
+    }
+    
+    &--note {
+      font-size: 36px;
+      @include mq-max() {
+        font-size: 32px;
+      }
+    }
+    
+    &--shopping {
+      font-size: 20px;
+      @include mq-max() {
+        font-size: 18px;
+      }
+    }
+    
+    
+    span[class^="icon-"] {
+      transition: transform 0.5s;
+    }
+
+    &.hover {
+      background: #fff;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    &.hover span[class^="icon-"] {
+      transform: rotateY(-360deg);
+    }
+    
+  }
+}
