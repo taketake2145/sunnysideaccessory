@@ -4,7 +4,8 @@
 include_once("functions/index.php");
 
 // head.php で必要な必須変数
-$head_title = "Sunny Side Accessory";
+$head_title = "サニーサイド アクセサリー | イヤリングやブレスレットのハンドメイド作家";
+$head_description = "イヤリングやブレスレットを一つひとつ丁寧にハンドメイドしています。ご相談・ご注文承っております。";
 $ogp_img = ASSETS_PATH."/ogp.jpg";
 ?>
 <!doctype html>

@@ -3,7 +3,7 @@
     <div class="footer__flex">
       <div>
         <h1 class="footer__title">
-          <a href="/"><img src="<?php echo ASSETS_PATH; ?>/images/icomoon/logo.svg" alt="Sunny Side Accessory"></a>
+          <a href="/"><img src="<?php echo ASSETS_PATH; ?>/images/icomoon/logo.svg" alt="サニーサイド アクセサリー"></a>
         </h1>
         <p class="footer__copy">
           <img src="<?php echo ASSETS_PATH; ?>/images/icomoon/copy.svg" alt="ノスタルジックに揺られて">

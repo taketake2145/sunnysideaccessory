@@ -5,7 +5,8 @@
 	<meta name="robots" content="ALL">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
-  <meta property="og:title" content="<?php echo $head_title; ?>">
+  <meta name="description" content="<?php echo $head_title; ?>">
+  <meta property="og:title" content="<?php echo $head_description; ?>">
   <meta property="og:type" content="article">
   <meta property="og:url" content="<?php echo $canonical_link; ?>">
   <meta property="og:image" content="<?php echo $ogp_img; ?>">
